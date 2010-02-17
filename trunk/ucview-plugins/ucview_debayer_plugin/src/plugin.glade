@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!--Generated with glade3 3.4.5 on Tue Nov 25 07:19:17 2008 -->
+<glade-interface>
+  <widget class="GtkWindow" id="window1">
+    <child>
+      <widget class="GtkVBox" id="vbox1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkHBox" id="hbox1">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkLabel" id="label1">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Interpolation Type:</property>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="padding">6</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkComboBox" id="combobox1">
+                <property name="visible">True</property>
+                <property name="items" translatable="yes">Nearest
+Edge Sensing</property>
+                <signal name="changed" handler="interp_type_combo_changed"/>
+              </widget>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </widget>
+        </child>
+        <child>
+          <widget class="GtkCheckButton" id="activate_ccm_check">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="label" translatable="yes">Enable Colour Correction Matrix</property>
+            <property name="response_id">0</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="activate_ccm"/>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkCheckButton" id="activate_rbgain_check">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="label" translatable="yes">Enable Red/Blue Gain ( Whitebalance )</property>
+            <property name="response_id">0</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="activate_rbgain"/>
+          </widget>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHBox" id="hbox2">
+            <property name="visible">True</property>
+            <property name="spacing">4</property>
+            <child>
+              <widget class="GtkVBox" id="vbox2">
+                <property name="visible">True</property>
+                <child>
+                  <widget class="GtkCheckButton" id="activate_auto_rbgain_check">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="label" translatable="yes">Auto</property>
+                    <property name="response_id">0</property>
+                    <property name="draw_indicator">True</property>
+                    <signal name="toggled" handler="activate_auto_rbgain"/>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="GtkHBox" id="hbox3">
+                    <property name="visible">True</property>
+                    <child>
+                      <widget class="GtkLabel" id="label">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">Red Gain:</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkHScale" id="rscale">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="adjustment">1 0 6 0.01 0.5 1</property>
+                        <property name="digits">2</property>
+                        <signal name="value_changed" handler="rgain_changed"/>
+                      </widget>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkHBox" id="hbox4">
+                    <property name="visible">True</property>
+                    <child>
+                      <widget class="GtkLabel" id="label2">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">Blue Gain:</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkHScale" id="bscale">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="adjustment">1 0 6 0.01 0.5 1</property>
+                        <property name="digits">2</property>
+                        <signal name="value_changed" handler="bgain_changed"/>
+                      </widget>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="padding">12</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>

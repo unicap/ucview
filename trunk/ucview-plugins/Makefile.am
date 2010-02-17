@@ -1,0 +1,1 @@
+SUBDIRS=ucview_histogram_plugin ucview_videoplay_plugin ucview_debayer_plugin
