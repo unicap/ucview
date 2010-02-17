@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: ucview
+Description: ucview image capture application
+Requires: 
+Version: @VERSION@
+Cflags: -I${includedir}/ucview

@@ -1,0 +1,25 @@
+[Desktop Entry]
+Version=0.32
+Encoding=UTF-8
+Name=UCView
+Name[de]=UCView
+Name[fr]=UCView
+Name[pt_BR]=UCView
+Name[ru]=UCView
+GenericName=Image Capture Application
+GenericName[de]=Videoanwendung
+GenericName[fr]=Application de capture vidéo
+GenericName[pt_BR]=Aplicação de Captura de Imagem
+GenericName[ru]=Программа для записи видео
+Type=Application
+Comment=Capture video images
+Comment[de]=Aufnahme von Videobildern
+Comment[fr]=Capture d'images vidéo
+Comment[pt_BR]=Capturar imagens do vídeo
+Comment[ru]=Сохранение видеоизображений
+Exec=ucview
+TryExec=ucview
+Icon=ucview.png
+Terminal=false
+Categories=Application;AudioVideo;Video;GTK;
+StartupNotify=true

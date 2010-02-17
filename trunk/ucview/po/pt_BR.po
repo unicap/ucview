@@ -1,0 +1,466 @@
+# translation of ptBR.po to Brazilian Portuguese
+# Brazilian Portuguese translation for ucview
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
+# This file is distributed under the same license as the ucview package.
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
+# Andre Paulo Machado <andre.panm@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: ptBR\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2007-09-05 22:07+0200\n"
+"PO-Revision-Date: 2008-11-06 13:01-0200\n"
+"Last-Translator: Andre Paulo Machado <andre.panm@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-pt_br@mail.kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2008-11-06 14:41+0000\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+#: ../src/device_dialog.c:125
+msgid "Select Device"
+msgstr "Selecionar Dispositivo"
+
+#: ../src/device_dialog.c:131
+msgid "<b>Device:</b>"
+msgstr "<b>Dispositivo</b>"
+
+#: ../src/device_dialog.c:138
+msgid "<b>Video Format:</b>"
+msgstr "<b>Formato de Vídeo</b>"
+
+#: ../src/device_dialog.c:147
+msgid "Remember selection and use as default in the future"
+msgstr "Lembrar configuração e usá-la como padrão"
+
+#: ../src/gui.c:92
+msgid "_File"
+msgstr "_Arquivo"
+
+#: ../src/gui.c:93
+msgid "_Device"
+msgstr "_Dispositivo"
+
+#: ../src/gui.c:94
+msgid "_Edit"
+msgstr "_Editar"
+
+#: ../src/gui.c:95
+msgid "_View"
+msgstr "_Visualizar"
+
+#: ../src/gui.c:96
+msgid "_Tools"
+msgstr "Ferramen_tas"
+
+#: ../src/gui.c:97
+msgid "_Help"
+msgstr "A_juda"
+
+#: ../src/gui.c:99
+msgid "_Quit"
+msgstr "_Sair"
+
+#: ../src/gui.c:99
+msgid "Quit"
+msgstr "Sair"
+
+#: ../src/gui.c:100
+msgid "_Copy"
+msgstr "_Copiar"
+
+#: ../src/gui.c:100
+msgid "Copy"
+msgstr "Copiar"
+
+#: ../src/gui.c:101
+msgid "_Adjustments"
+msgstr "_Ajustes"
+
+#: ../src/gui.c:101
+msgid "Adjustments"
+msgstr "Ajustes"
+
+#: ../src/gui.c:102
+msgid "_Preferences"
+msgstr "_Preferências"
+
+#: ../src/gui.c:102
+msgid "Preferences"
+msgstr "Preferências"
+
+#: ../src/gui.c:104
+msgid "_Change Device"
+msgstr "_Alterar Dispositivo"
+
+#: ../src/gui.c:104
+msgid "Change Device"
+msgstr "Alterar Dispositivo"
+
+#: ../src/gui.c:105
+msgid "_Save Image"
+msgstr "_Salvar Imagem"
+
+#: ../src/gui.c:105
+msgid "Save Still Image"
+msgstr "Salvar Imagem"
+
+#: ../src/gui.c:115
+msgid "P_ause"
+msgstr "P_ausar"
+
+#: ../src/gui.c:115
+msgid "Pause"
+msgstr "Pausar"
+
+#: ../src/gui.c:117
+msgid "_Play Video"
+msgstr "Re_produzir Vídeo"
+
+#: ../src/gui.c:117
+msgid "Play Video"
+msgstr "Reproduzir Vídeo"
+
+#: ../src/gui.c:119
+msgid "Show _FPS"
+msgstr "Mostrar _FPS"
+
+#: ../src/gui.c:119
+msgid "Show FPS"
+msgstr "Mostrar FPS"
+
+#: ../src/gui.c:120
+msgid "_Measure"
+msgstr "_Medir"
+
+#: ../src/gui.c:120
+msgid "Measure"
+msgstr "Medir"
+
+#: ../src/gui.c:127
+msgid "_Scale To Fit"
+msgstr "E_scalar Para Caber"
+
+#: ../src/gui.c:127
+msgid "Scale To Fit"
+msgstr "Escalar Para Caber"
+
+#: ../src/gui.c:132
+msgid "_Toolbar"
+msgstr "Barra de Ferramen_tas"
+
+#: ../src/gui.c:132
+msgid "Toolbar"
+msgstr "Barra de Ferramentas"
+
+#: ../src/gui.c:137
+msgid "Fullscreen"
+msgstr "Tela Cheia"
+
+#: ../src/gui.c:138
+msgid "Leave Fullscreen"
+msgstr "Deixar Tela Cheia"
+
+#: ../src/gui.c:141
+msgid "About"
+msgstr "Sobre o UCview"
+
+#: ../src/gui.c:152
+msgid "_Record Video"
+msgstr "_Gravar Vídeo"
+
+#: ../src/gui.c:153
+msgid "_Time Lapse"
+msgstr "_Intervao de Tempo"
+
+#: ../src/gui.c:174
+msgid "Side_bar"
+msgstr "_Barra Lateral"
+
+#: ../src/gui.c:283
+msgid "Building menus failed: %s\n"
+msgstr "Falha ao compilar os menus: %s\n"
+
+#: ../src/about_dialog.c:20
+msgid "An easy to use video capture application"
+msgstr "Uma fácil aplicação para captura de vídeos"
+
+#: ../src/settings_dialog.c:229
+msgid "High Quality / Large Files"
+msgstr "Qualidade Alta / Arquivos Maiores"
+
+#: ../src/settings_dialog.c:230
+msgid "Medium Quality"
+msgstr "Qualidade Média"
+
+#: ../src/settings_dialog.c:231
+msgid "Low Quality / Small Files"
+msgstr "Qualidade Baixa / Arquivos Menores"
+
+#: ../src/settings_dialog.c:232
+msgid "Custom"
+msgstr "Personalizar"
+
+#: ../src/settings_dialog.c:246
+msgid "Target Bitrate: "
+msgstr "Taxa de Bits: "
+
+#: ../src/settings_dialog.c:275
+msgid "kbps"
+msgstr "kbps"
+
+#: ../src/settings_dialog.c:331
+msgid "Video File Path: "
+msgstr "Caminho do Arquivo de Vídeo: "
+
+#: ../src/settings_dialog.c:333
+msgid "Video File Path"
+msgstr "Caminho do Arquivo de Vídeo"
+
+#: ../src/settings_dialog.c:353
+msgid "Encoder Settings"
+msgstr "Configurações do codificador"
+
+#: ../src/settings_dialog.c:476
+#, c-format
+msgid "Compression Quality:"
+msgstr "Qualidade da Compressão:"
+
+#: ../src/settings_dialog.c:506
+msgid "Active"
+msgstr "Ativado"
+
+#: ../src/settings_dialog.c:512
+msgid "Name"
+msgstr "Nome"
+
+#: ../src/settings_dialog.c:531
+msgid "_About Plugin"
+msgstr "_Sobre o Plugin"
+
+#: ../src/settings_dialog.c:536
+msgid "C_onfigure Plugin"
+msgstr "C_onfigurar Plugin"
+
+#: ../src/settings_dialog.c:558
+msgid "Still Image File Path: "
+msgstr "Manter Este Local de Imagens: "
+
+#: ../src/settings_dialog.c:560
+msgid "Still Image File Path"
+msgstr "Manter Este Local de Imagens"
+
+#: ../src/settings_dialog.c:568
+msgid "Encoding frame rate: "
+msgstr "Taxa de codificação de quadros: "
+
+msgid "Encoding quality: "
+msgstr "Qualidade da Codificação: "
+
+#: ../src/settings_dialog.c:593
+msgid "ucview Preferences"
+msgstr "Preferências do ucview"
+
+#: ../src/settings_dialog.c:601
+msgid "Video"
+msgstr "Vídeo"
+
+#: ../src/settings_dialog.c:603
+msgid "Image"
+msgstr "Imagem"
+
+#: ../src/settings_dialog.c:605
+msgid "Plugins"
+msgstr "Plugins"
+
+#: ../src/settings_dialog.c:619
+msgid "Enable audio recording"
+msgstr "Ativar gravação de áudio"
+
+#: ../src/settings_dialog.c:629
+msgid "Audio Settings"
+msgstr "Configurações de Áudio"
+
+#: ../src/settings_dialog.c:639
+msgid "Delay audio encoding"
+msgstr "Atrasar codificação de áudio"
+
+#: ../src/settings_dialog.c:649
+msgid "Audio device: "
+msgstr "Dispositivo de Áudio: "
+
+#: ../src/settings_dialog.c:671
+msgid "Encoding bitrate: "
+msgstr "Taxa de codificação: "
+
+#: ../src/settings_dialog.c:772
+msgid "Video Encoding: "
+msgstr "Codificação do Vídeo: "
+
+#: ../src/settings_dialog.c:780
+msgid "Uncompressed AVI"
+msgstr "AVI Descomprimido"
+
+#: ../src/settings_dialog.c:1027
+msgid "Image file type: "
+msgstr "Tipo de Arquivo de Imagem: "
+
+#: ../src/settings_dialog.c:1087
+msgid "Record Video"
+msgstr "Gravar Vídeo"
+
+#: ../src/settings_dialog.c:1082
+msgid "Time Lapse Action: "
+msgstr "Ação para Intervalos de Tempo: "
+
+#: ../src/settings_dialog.c:1089
+msgid "Image Sequence"
+msgstr "Seqüência de Imagens"
+
+#: ../src/settings_dialog.c:1104
+msgid "Time between capture events:"
+msgstr "Tempo entre os eventos de captura:"
+
+#: ..src/settings_dialog.c:1117
+msgid "Automatically stop recording"
+msgstr "Parar automaticamente a gravação"
+
+#: ../src/settings_dialog.c:1198
+msgid "Time Lapse"
+msgstr "Intervalo de Tempo"
+
+#: ../src/settings_dialog.c:1129
+msgid "After number of frames:"
+msgstr "Após número de quadros:"
+
+#: ../src/settings_dialog.c:1140
+msgid "After recording time:"
+msgstr "Após tempo de gravação:"
+
+#: ../src/settings_dialog.c:1194
+msgid "Audio"
+msgstr "Áudio"
+
+#: ../src/time_selection.c:90
+msgid "days"
+msgstr "dias"
+
+#: ../src/time_selection.c:93
+msgid "hours"
+msgstr "horas"
+
+#: ../src/time_selection.c:96
+msgid "minutes"
+msgstr "minutos"
+
+#: ../src/time_selection.c:99
+msgid "seconds"
+msgstr "segundos"
+
+#: ../src/ucview.c:260
+#, c-format
+msgid ""
+"<b>Crash detected!</b>\n"
+"UCView detected a malfunction of the \n"
+"<i>'%s'</i>\n"
+"plugin. The plugin got disabled."
+msgstr ""
+"<b>Erro detectado!</b>\n"
+"O UCView detectou um mal comportamento do \n"
+"plugin <i>'%s'</i>.\n"
+"Este plugin foi desativado."
+
+#: ../src/ucview.c:265
+msgid ""
+"<b>Crash detected!</b>\n"
+"UCView detected a crash but it could not find the cause. \n"
+"Please report a bug."
+msgstr ""
+"<b>Erro detectado!</b>\n"
+"O UCView detectou um erro mas sua causa é desconhecida. \n"
+"Por favor, relate um bug."
+
+#: ../src/ucview.c:379
+msgid "Starting video device..."
+msgstr "Inicializando dispositivo de vídeo..."
+
+#: ../src/ucview.c:491
+#, c-format
+msgid "%.1f FPS"
+msgstr "%.1f FPS"
+
+#: ../src/ucview.c:518
+msgid "Failed to start video display!"
+msgstr "Falha ao iniciar o vídeo!"
+
+#: ../src/ucview.c:679
+msgid "Picture saved to: \n<i>%s</i>"
+msgstr "A imagem foi salva em: \n<i>%s</i>"
+
+#: ../src/ucview.c:688
+#, c-format
+msgid "Do not show this message again"
+msgstr "Não mostrar esta mensagem novamente"
+
+#: ../src/ucview.c:776
+msgid "Could not initialize DBUS connection :-(\n"
+msgstr "Não foi possível iniciar a conexão DBUS.\n"
+
+#: ../src/ucview.c:790
+msgid "Failed to open device dialog!\n"
+msgstr "Falhou ao abrir o dispositivo!\n"
+
+#: ../src/ucview.c:1104 ../src/ucview_dbus_server.c:255
+msgid "No supported video capture device found!"
+msgstr "Dispositivo de captura de vídeo não encontrado!"
+
+#: ../src/ucview.c:1121
+msgid "No device!"
+msgstr "Dispositivo desativado!"
+
+#: ../src/ucview_dbus_server.c:94
+msgid "Unable to connect to dbus: %s"
+msgstr "Não foi possível conectar ao dbus: %s"
+
+#: ../src/ucview_dbus_server.c:128
+msgid "Unable to register service: %s"
+msgstr "Não foi possível registrar o serviço: %s"
+
+#: ../src/ucview_dbus_server.c:145 ../src/ucview_dbus_server.c:158
+msgid "Unknown property\n"
+msgstr "Propriedade desconhecida\n"
+
+#: ../src/ucview_dbus_server.c:181
+msgid "Expected path in dbus_paths\n"
+msgstr "Caminho esperado em dbus_path\n"
+
+#: ../src/callbacks.c:670 ../src/ucview_dbus_server.c:350
+msgid "Looking for video capture devices"
+msgstr "Procurando dispositivos de captura de vídeo"
+
+#: ../desktop/ucview.desktop.in.h:1
+msgid "Capture video images"
+msgstr "Capturar imagens do vídeo"
+
+#: ../desktop/ucview.desktop.in.h:2
+msgid "Image Capture Application"
+msgstr "Aplicação de Captura de Imagem"
+
+#: ../desktop/ucview.desktop.in.h:3
+msgid "UCView"
+msgstr "UCView"
+
+#: ../src/callbacks.c:466
+msgid "Failed to start video recording!"
+msgstr "Falha ao iniciar a gravação de vídeo!"
+
+#: ../src/callbacks.c:495
+msgid "Processing video file"
+msgstr "Procesando arquivo de vídeo"
+
+#: ../src/callbacks.c:525
+msgid "Video saved to: \n<i>%s</i>"
+msgstr "O vídeo foi salvo em: \n<i>%s</i>"

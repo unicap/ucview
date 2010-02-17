@@ -1,0 +1,43 @@
+2009-10-07  Arne Caspari  <arne@unicap-imaging.org>
+
+	* fr.po: fix: correct charset
+
+2009-07-08  Arne Caspari  <arne@unicap-imaging.org>
+
+	* pt_BR.po: translation by Andre Paulo Machado
+
+2008-09-24  Arne Caspari  <arne@unicap-imaging.org>
+
+	* ru.po: russian translation by Юрий Аляев and Vlad Glagolev
+
+2008-05-19  Arne Caspari  <arne@unicap-imaging.org>
+
+	* fr.po: french translation by Kiki Novak
+
+2007-08-16  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.16.1.
+
+2007-08-16  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.16.1.
+
+2007-08-16  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.16.1.
+
+2007-08-16  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.16.1.
+
+2007-08-03  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.in.in: Upgrade to gettext-0.16.1.
+	* Rules-quot: New file, from gettext-0.16.1.
+	* boldquot.sed: New file, from gettext-0.16.1.
+	* en@boldquot.header: New file, from gettext-0.16.1.
+	* en@quot.header: New file, from gettext-0.16.1.
+	* insert-header.sin: New file, from gettext-0.16.1.
+	* quot.sed: New file, from gettext-0.16.1.
+	* remove-potcdate.sin: New file, from gettext-0.16.1.
+

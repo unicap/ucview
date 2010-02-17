@@ -1,0 +1,314 @@
+2010-01-06  Arne Caspari  <arne@unicap-imaging.org>
+
+	* added support for plugin image file type handlers 
+
+2009-11-11  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/plugin_loader.c (ucview_load_plugins): fix: plugin load failed if user_path did not exist
+
+2009-07-16  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/settings_dialog.c (settings_dialog_init): replaced deprecated gtk_hbutton_box_set_layout_default
+
+	* src/ucview-info-box.c (style_set): GtkTooltips is deprecated ( and the style code is incorrect )
+
+	* src/checkperm.c (create_message_dialog): removed deprecated gtk_box_pack_start_defaults
+
+	* src/ucview-window.c (fps_timeout_cb): show a message when no more video frames are received
+	(ucview_window_enable_fps_display): moved to ucview-window.c
+
+2009-06-30  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/callbacks.c (change_device_cb): preselect current device
+
+2009-05-27  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/callbacks.c (device_dialog_ok_clicked_cb): clear info box on device change
+
+	* src/ucview-window.c (device_removed_response_cb): destroy 'device removed' box after response
+
+2009-05-20  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/ucview-device-dialog.c (ucview_device_dialog_get_handle): return a cloned handle for ucview_device_dialog_get_handle
+
+	* src/gui.c: moved Adjustments entry to device menu
+
+2009-05-13  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/ucview-time-selection.c: proper naming of source file
+
+2009-05-12  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/ucview-window.c (ucview_window_class_init): new 'video-format-changed' signal
+
+	* src/plugin_loader.c (ucview_load_plugins): require a ucview_plugin_get_api_version func
+	   updated plugin API
+
+	* src/ucview-device-dialog.c: made device change dialog non-modal
+
+	* src/callbacks.c (change_device_cb): made device change dialog non-modal
+
+	* src/ucview-window.c: proper naming of source file
+
+	* src/ucview.c: code cleanup
+
+2009-05-06  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/callbacks.c: code cleanup
+
+	* src/ucview.c (ucview_set_handle, ucview_set_video_format): some refractoring
+	(ucview_set_video_format): removed encoder_fastpath
+	(ucview_set_handle): deprecated 'disable_xv' config option
+	(ucview_set_handle): new 'backend' config option
+	(ucview_set_handle): new 'backend_fourcc' config option
+	(ucview_set_handle): new 'property_update_parameter' config option
+
+2009-03-19  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/ucview.c: Code cleanup
+
+2009-03-18  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/ucview.c (create_main_window): remove "No device!" dialog ( just close application )
+	(create_main_window): Remove "No supported device..." dialog ( just open the device selection dialog )
+
+	* removed dbus support
+
+2008-08-25  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/ucview.c (ucview_window_class_init): Change image_saved signal to image_file_created
+
+2008-08-07  Arne Caspari  <arne@unicap-imaging.org>
+
+	* plugins/histogram/histogram.c (ucview_plugin_init): don't overwrite default log handler, stupid!
+
+2008-07-16  Arne Caspari  <arne@unicap-imaging.org>
+
+	* plugins/histogram/histogram.c (ucview_plugin_enable): do not display window when histogram is disabled
+
+2008-07-07  Arne Caspari  <arne@unicap-imaging.org>
+
+	* plugins/histogram/histogram.c: enable/disable message logging from the Makefile
+
+2008-07-04  Arne Caspari  <arne@unicap-imaging.org>
+
+	* desktop/Makefile.am (desktop_in_files): i18n
+
+	* desktop/ucview.desktop.in (Version): fix: version information
+
+2008-07-03  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/ucview.c: some cleanup
+
+	* src/Makefile.am (ucview_LDFLAGS): export symbols for plugins
+
+2008-07-02  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/ucview.c (predisplay_cb): emit a signal when an image got saved
+
+2008-07-01  Arne Caspari  <arne@unicap-imaging.org>
+
+	* configure.in: require unicap >= 0.2.23 because of new audio/codec api
+
+	* src/ucview.c (new_frame_cb): use GTimer instead of gettimeofday
+
+2008-06-25  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/callbacks.c (record_toggled_cb, gconf_notification_cb): make better use of GConf
+	(fps_toggled_cb): correctly restore 'show_fps' state	
+
+2008-06-24  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/Makefile.am (ucview_SOURCES): remove old image_effects
+
+	* src/gui.c: removed old functions for measure/colormag
+
+2008-06-17  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/device_dialog.c (create_dlg): fixed restore device
+
+2008-05-22  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/settings_dialog.c (create_audio_page): use new ucil audio interface
+
+2008-05-19  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/settings_dialog.c (create_image_page): fix: crash when gconf
+	key is uninitialized
+
+	* src/sidebar.c: added image side bar
+
+	* src/settings_dialog.c (create_rawavi_settings_vbox): added
+	support for raw/avi recording
+	(create_time_lapse_page): support for time lapse recording
+
+	* src/ucview.c (predisplay_cb): added time lapse recording 
+
+2008-05-08  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/ucview.c (predisplay_cb): added support for image file types
+
+	* src/settings_dialog.c (create_image_page): added setting for
+	image file type
+
+2008-05-07  Arne Caspari  <arne@unicap-imaging.org>
+
+	* src/callbacks.c (save_still_image_cb): fix small memleak
+
+2007-10-11  Arne Caspari  <arne@arne-laptop>
+
+	* src/ucview.c (ucview_destroy_event_cb): fix: missing symbol when
+	compiling with DBUS disabled
+
+2007-09-27  Arne Caspari  <arne@arne-laptop>
+
+	* src/ucview.c: i18n support
+
+	* src/settings_dialog.c (create_audio_page): added audio settings page
+
+	* src/plugin_loader.c: fixed small memleak
+
+	* src/gui.c (scale_to_fit_toggle_entry): added scale-to-fit
+	(gui_create_manager): added view-toolbar menu option
+
+	* src/device_dialog.c: improve responsiveness
+	open device immediately if only one is connected
+
+	* src/callbacks.c (fps_timeout_cb): better handling of FPS display
+
+	* src/settings_dialog.c (settings_dialog_init): added a close
+	button to settings dialog
+
+2007-09-26  Arne Caspari  <arne@arne-laptop>
+
+	* src/callbacks.c: display an info box with the file path of a
+	saved video 
+	(process_video_update_progressbar_timeout): implemented video
+	recording and optional asynchronous audio encoding with progressbar
+
+2007-09-24  Arne Caspari  <arne@arne-laptop>
+
+	* src/icons.c (add_icon_source): fixed small memleak
+
+2007-09-17  Arne Caspari  <arne@arne-laptop>
+
+	* src/icons.c (add_icon_source): add configuration of icon theme
+
+	* src/ucview.c (ucview_window_init): fix small memleak
+
+2007-09-09  Arne Caspari  <arne@arne-laptop>
+
+	* src/gui.c: disable video recording and playback until support in
+	libucil is working again
+
+	* src/ucview.c: allow UCView to run without DBus
+
+2007-08-28  Arne Caspari  <arne@arne-laptop>
+
+	* src/plugin_loader.c (ucview_load_plugins): fix small memleak
+
+2007-08-16  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Remove intl.
+
+2007-08-16  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Add intl.
+	* configure.in (AC_OUTPUT): Add intl/Makefile.
+
+2007-08-03  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (ACLOCAL_AMFLAGS): New variable.
+	(EXTRA_DIST): Add config.rpath, m4/ChangeLog.
+
+2007-07-06  Arne Caspari  <arne@arne-laptop>
+
+	* src/ucview.c (ucview_window_set_property): added
+	'keep-dbus-connection' property
+	(main): use icon themes
+
+	* src/gui.c (entries): added 'Change Device' menu entry
+
+	* src/device_dialog.c (device_dialog_run): store/restore default
+	device and format
+
+	* debian/ucview.install: fix: missing icons
+
+2007-07-02  Arne Caspari  <arne@arne-laptop>
+
+	* src/ucview.c (ucview_window_destroy): fix crash on plugin unload
+
+	* src/plugin_loader.c (ucview_load_plugins): fix: plugin path
+
+2007-06-18  Arne Caspari  <arne@arne-laptop>
+
+	* src/gui.c (gui_create_manager): do not use built-in icons anymore
+
+2007-05-25  Arne Caspari  <arne@arne-laptop>
+
+	* debian/ucview.install: changed install dir for glade file
+
+2007-05-19  Arne Caspari  <arne@arne-laptop>
+
+	* src/ucview.c (ucview_window_init): use glade for application window
+
+	* src/user_config.c (user_config_restore_device): added per device
+	configuration files
+
+2007-05-10  Arne Caspari  <arne@arne-laptop>
+
+	* src/ucview_client.c (main): example DBus client
+
+	* src/plugin_loader.c (ucview_load_plugins): initial plugin support
+
+	* src/ucview.c (main): use DBus to start new instance of UCView
+	(ucview_window_class_init): implemented ucview_window class
+
+2007-05-03  Arne Caspari  <arne@arne-laptop>
+
+	* src/callbacks.c (save_still_image_cb): fix: still_image_file_path
+
+2007-04-17  Arne Caspari  <arne@arne-laptop>
+
+	* src/settings_dialog.c (create_video_page): more video options
+
+	* src/ucview.c (new_frame_cb): move fps display to the statusbar
+
+2007-04-13  Arne Caspari  <arne@arne-laptop>
+
+	* src/ucview.c (resize_window): allow the main window to be resized
+
+2007-04-12  Arne Caspari  <arne@arne-laptop>
+
+	* src/callbacks.c (clipboard_copy_image_cb): implemented clipboard copy
+
+	* src/gui.c (showhide_toolbar_action): show/hide the toolbar
+
+2007-04-11  Arne Caspari  <arne@arne-laptop>
+
+	* src/settings_dialog.c (settings_dialog_init): correctly
+	store/restore save locations
+	(settings_dialog_init): check save path permissions
+
+2007-04-10  Arne Caspari  <arne@arne-laptop>
+
+	* src/ucview.c (main): code cleanup
+
+	* src/gui.c (gui_create_manager): display custom icons in the
+	toolbar again
+
+2007-04-02  Arne Caspari  <arne@arne-laptop>
+
+	* src/callbacks.c: video recording support; video playback support
+	(color_mag_window_timeout): disabled color magnifier
+
+	* src/gui.c: use ui_manager for menu/toolbar
+
+2007-02-22  Arne Caspari  <arne@arne-laptop>
+
+	* src/callbacks.c: code cleanup
+
+2007-02-05  Arne Caspari  <arne@arne-laptop>
+
+	* src/ucview.c (main): use gconf_client
+

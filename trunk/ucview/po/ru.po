@@ -1,0 +1,658 @@
+# translation of ucview.
+# Copyright (C) 2007 Arne Caspari
+# This file is distributed under the same license as the ucview package.
+# <arne@unicap-imaging.org>, 2007.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ucview 0.10\n"
+"Report-Msgid-Bugs-To: arne@unicap-imaging.org\n"
+"POT-Creation-Date: 2008-07-28 11:48+0400\n"
+"PO-Revision-Date: 2008-09-20 16:24+0400\n"
+"Last-Translator: Vlad Glagolev <stealth@sourcemage.org>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gettext Translator 0.9\n"
+
+#: ../data/ucview.schemas.in.h:1
+msgid "Alsa audio card"
+msgstr "Звуковая карта Alsa"
+
+#: ../data/ucview.schemas.in.h:2
+msgid "Audio encoder bitrate"
+msgstr "Скорость кодирования звука"
+
+#: ../data/ucview.schemas.in.h:3
+msgid "Bitrate setting for vorbis audio encoder"
+msgstr "Установка скорости для кодировщика звука vorbis"
+
+#: ../data/ucview.schemas.in.h:4
+msgid "Crash detected"
+msgstr "Обнаружен сбой"
+
+#: ../data/ucview.schemas.in.h:5
+msgid "Encode audio data asynchronously"
+msgstr "Кодировать звуковые данные асинхронно"
+
+#: ../data/ucview.schemas.in.h:6
+msgid "Encoder Fastpath"
+msgstr "Прямой выбор кодировщика"
+
+#: ../data/ucview.schemas.in.h:7
+msgid "Frame rate for video files"
+msgstr "Число кадров в секунду для видеофайлов"
+
+#: ../data/ucview.schemas.in.h:8
+msgid "Hide 'Image Saved' box"
+msgstr "Скрыть табличку 'Изображение сохранено'"
+
+#: ../data/ucview.schemas.in.h:9
+msgid "Hide 'Video Saved' box"
+msgstr "Скрыть табличку 'Видео сохранено'"
+
+#: ../data/ucview.schemas.in.h:10
+msgid "Icon theme"
+msgstr "Тема пиктограмм"
+
+#: ../data/ucview.schemas.in.h:11
+msgid "Path for still images"
+msgstr "Путь к исходным изображениям"
+
+#: ../data/ucview.schemas.in.h:12
+msgid "Path to video file location"
+msgstr "Путь к видеофайлу"
+
+#: ../data/ucview.schemas.in.h:13
+msgid "Record audio"
+msgstr "Запись звука"
+
+#: ../data/ucview.schemas.in.h:14
+msgid ""
+"Record audio as raw pcm during video recording and reencode as vorbis "
+"afterwards to save CPU time during recording."
+msgstr ""
+"Запись звука без сжатия во время записи видео и последующее его кодирование "
+"с помощью vorbis позволит сохранить ресурсы процессора."
+
+#: ../data/ucview.schemas.in.h:15
+msgid "Record audio data while recording video"
+msgstr "Сохранять звуковые данные во время записи видео"
+
+#: ../data/ucview.schemas.in.h:16
+msgid "Remember device"
+msgstr "Запомнить устройство"
+
+#: ../data/ucview.schemas.in.h:17
+msgid "Scale to fit"
+msgstr "В размер"
+
+#: ../data/ucview.schemas.in.h:18
+msgid "Scale video image to fit window size"
+msgstr "Масштабировать видеоизображение к размеру окна"
+
+#: ../data/ucview.schemas.in.h:19
+msgid "Scale video to fit current window"
+msgstr "Масштабировать видео к размеру текущего окна"
+
+#: ../data/ucview.schemas.in.h:20
+msgid "Show Toolbar"
+msgstr "Показать панель инструментов"
+
+#: ../data/ucview.schemas.in.h:21
+msgid "Show toolbar"
+msgstr "Показать панель инструментов"
+
+#: ../data/ucview.schemas.in.h:22
+msgid ""
+"Try to lower the resources required for video encoding by setting the video "
+"display to the same color format as the video encoder and passing the video "
+"display buffers to the encoder without copying the data."
+msgstr ""
+"Попробуйте уменьшить ресурсоёмкость процесса кодирования видео, установив "
+"для видеодисплея тот же формат цвета, что и у кодировщика видео и передавая "
+"буферы видеодисплея кодировщику без копирования данных."
+
+#: ../data/ucview.schemas.in.h:23
+msgid "Try to reopen a device on next startup"
+msgstr "Попробуйте повторно открыть устройство при следующем запуске"
+
+#: ../data/ucview.schemas.in.h:24
+msgid "UCView detected a crash"
+msgstr "UCView обнаружил сбой"
+
+#: ../data/ucview.schemas.in.h:25
+msgid "Video encoder bitrate"
+msgstr "Скорость передачи информации кодировщика видео"
+
+#: ../data/ucview.schemas.in.h:26
+msgid "Video encoder preset"
+msgstr "Предварительная настройка кодировщика видео"
+
+#: ../data/ucview.schemas.in.h:27
+msgid "Video encoder quality setting"
+msgstr "Установка качества кодировщика видео"
+
+#: ../data/ucview.schemas.in.h:28
+msgid ""
+"When not set, a info box containing the location of the video file is shown "
+"after recording"
+msgstr ""
+"Когда этот пункт не выбран, информационное табло содержит адрес файла, "
+"показываемого после записи"
+
+#: ../data/ucview.schemas.in.h:29
+msgid ""
+"When recording a video file, resample the video stream to this frame rate"
+msgstr ""
+"При записи видеофайла сконвертируйте видеопоток к данной частоте кадров"
+
+#: ../data/ucview.schemas.in.h:30
+msgid "Window height"
+msgstr "Высота окна"
+
+#: ../data/ucview.schemas.in.h:31
+msgid "Window state"
+msgstr "Состояние окна"
+
+#: ../data/ucview.schemas.in.h:32
+msgid "Window width"
+msgstr "Ширина окна"
+
+#: ../data/ucview.schemas.in.h:33
+msgid "Window x position"
+msgstr "Координата x окна"
+
+#: ../data/ucview.schemas.in.h:34
+msgid "Window y position"
+msgstr "Координата y окна"
+
+#: ../plugins/histogram/histogram.c:135
+msgid "Display Histogram"
+msgstr "Отобразить гистограмму"
+
+#: ../plugins/histogram/histogram.c:187
+msgid "Histogram Settings"
+msgstr "Параметры гистограммы"
+
+#: ../plugins/histogram/histogram.c:193
+msgid "Show histogram: "
+msgstr "Показать гистограмму:"
+
+#: ../plugins/histogram/histogram.c:195
+msgid "Overlay video image"
+msgstr "Внешний слой видеоизображения"
+
+#. gtk_combo_box_append_text( GTK_COMBO_BOX( combo ), _( "Sidebar" ) );
+#: ../plugins/histogram/histogram.c:197
+msgid "Window"
+msgstr "Окно"
+
+#: ../plugins/histogram/histogram.c:206
+msgid "Opacity:"
+msgstr "Прозрачность:"
+
+#: ../plugins/histogram/histogram.c:300
+msgid "Histogram"
+msgstr "Гистограмма"
+
+#: ../src/gui.c:118
+msgid "_File"
+msgstr "_Файл"
+
+#: ../src/gui.c:119
+msgid "_Device"
+msgstr "_Устройство"
+
+#: ../src/gui.c:120
+msgid "Change Video Format"
+msgstr "Сменить формат видео"
+
+#: ../src/gui.c:121
+msgid "Change Resolution"
+msgstr "Сменить разрешение"
+
+#: ../src/gui.c:122
+msgid "_Edit"
+msgstr "_Правка"
+
+#: ../src/gui.c:123
+msgid "_View"
+msgstr "_Вид"
+
+#: ../src/gui.c:124
+msgid "_Tools"
+msgstr "_Инструменты"
+
+#: ../src/gui.c:125
+msgid "_Help"
+msgstr "_Помощь"
+
+#: ../src/gui.c:127
+msgid "_Quit"
+msgstr "_Выход"
+
+#: ../src/gui.c:127
+msgid "Quit"
+msgstr "Выход"
+
+#: ../src/gui.c:128
+msgid "_Copy"
+msgstr "_Копировать"
+
+#: ../src/gui.c:128
+msgid "Copy"
+msgstr "Копировать"
+
+#: ../src/gui.c:129
+msgid "_Adjustments"
+msgstr "_Настройки"
+
+#: ../src/gui.c:129
+msgid "Adjustments"
+msgstr "Настройки"
+
+#: ../src/gui.c:130
+msgid "_Preferences"
+msgstr "_Параметры"
+
+#: ../src/gui.c:130 ../src/icons.c:31
+msgid "Preferences"
+msgstr "Параметры"
+
+#: ../src/gui.c:132
+msgid "_Change Device"
+msgstr "_Сменить устройство"
+
+#: ../src/gui.c:132
+msgid "Change Device"
+msgstr "Сменить устройство"
+
+#: ../src/gui.c:133 ../src/icons.c:27
+msgid "_Save Image"
+msgstr "_Сохранить изображение"
+
+#: ../src/gui.c:133
+msgid "Save Still Image"
+msgstr "Сохранить неподвижное изображение"
+
+#: ../src/gui.c:135 ../src/icons.c:32
+msgid "Fullscreen"
+msgstr "Во весь экран"
+
+#: ../src/gui.c:136 ../src/icons.c:33
+msgid "Leave Fullscreen"
+msgstr "Оконный режим"
+
+#: ../src/gui.c:149 ../src/icons.c:30
+msgid "P_ause"
+msgstr "П_ауза"
+
+#: ../src/gui.c:149
+msgid "Pause"
+msgstr "Пауза"
+
+#: ../src/gui.c:150 ../src/icons.c:28
+msgid "_Record Video"
+msgstr "_Запись видео"
+
+#: ../src/gui.c:150 ../src/settings_dialog.c:1097
+msgid "Record Video"
+msgstr "Запись видео"
+
+#: ../src/gui.c:151
+msgid "_Time Lapse"
+msgstr "П_ромежуток времени"
+
+#: ../src/gui.c:151 ../src/settings_dialog.c:1209
+msgid "Time Lapse"
+msgstr "Промежуток времени"
+
+#: ../src/gui.c:152 ../src/icons.c:29
+msgid "_Play Video"
+msgstr "_Воспроизвести видео"
+
+#: ../src/gui.c:152
+msgid "Play Video"
+msgstr "Воспроизвести видео"
+
+#: ../src/gui.c:154
+msgid "Show _FPS"
+msgstr "Показать _частоту кадров"
+
+#: ../src/gui.c:154
+msgid "Show FPS"
+msgstr "Показать частоту кадров"
+
+#: ../src/gui.c:160
+msgid "_Scale To Fit"
+msgstr "_Уместить"
+
+#: ../src/gui.c:160
+msgid "Scale To Fit"
+msgstr "Уместить"
+
+#: ../src/gui.c:165
+msgid "_Toolbar"
+msgstr "Па_нель инструментов"
+
+#: ../src/gui.c:165
+msgid "Toolbar"
+msgstr "Панель инструментов"
+
+#: ../src/gui.c:170
+msgid "Side_bar"
+msgstr "_Боковая панель"
+
+#: ../src/gui.c:170
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+#: ../src/icons.c:26
+msgid "_Device Settings"
+msgstr "Параметры _устройства"
+
+#: ../src/time_selection.c:90
+msgid "days"
+msgstr "дней"
+
+#: ../src/time_selection.c:93
+msgid "hours"
+msgstr "часов"
+
+#: ../src/time_selection.c:96
+msgid "minutes"
+msgstr "минут"
+
+#: ../src/time_selection.c:99
+msgid "seconds"
+msgstr "секунд"
+
+#: ../src/ucview.glade.h:1 ../src/device_dialog.c:134
+msgid "<b>Device:</b>"
+msgstr "<b>Устройство:</b>"
+
+#: ../src/ucview.glade.h:2 ../src/device_dialog.c:141
+msgid "<b>Video Format:</b>"
+msgstr "<b>Формат видео:</b>"
+
+#: ../src/ucview.glade.h:3
+msgid "This is a placeholder for the button bar"
+msgstr "Это место для панели кнопок"
+
+#: ../src/ucview.glade.h:4
+msgid "This is a placeholder for the menu bar"
+msgstr "Это место для панели меню"
+
+#: ../src/ucview.glade.h:5
+msgid "ucview"
+msgstr "ucview"
+
+#: ../src/ucview_dbus_server.c:350 ../src/callbacks.c:635
+msgid "Looking for video capture devices"
+msgstr "Поиск устройств записи видео"
+
+#: ../src/device_dialog.c:128
+msgid "Select Device"
+msgstr "Выберите устройство"
+
+#: ../src/device_dialog.c:150
+msgid "Remember selection and use as default in the future"
+msgstr "Запомнить выбор и использовать в дальнейшем как значение по умолчанию"
+
+#: ../src/callbacks.c:172
+#, c-format
+msgid "%.1f FPS"
+msgstr "%.1f кадр/с"
+
+#: ../src/callbacks.c:421
+msgid "Failed to start video recording!"
+msgstr "Ошибка запуска записи видео!"
+
+#: ../src/callbacks.c:450
+msgid "Processing video file"
+msgstr "Идёт обработка видеофайла"
+
+#: ../src/callbacks.c:480
+#, c-format
+msgid ""
+"Video saved to: \n"
+"<i>%s</i>"
+msgstr ""
+"Сохранить видео как: \n"
+"<i>%s</i>"
+
+#: ../src/callbacks.c:487 ../src/ucview.c:720
+msgid "Do not show this message again"
+msgstr "Не показывать в дальнейшем"
+
+#: ../src/settings_dialog.c:424
+msgid "Colorformat: "
+msgstr "Цв. формат:"
+
+#: ../src/settings_dialog.c:429
+msgid "From Capture Device"
+msgstr "От устройства записи"
+
+#: ../src/settings_dialog.c:431
+msgid "UYVY"
+msgstr "UYVY"
+
+#: ../src/settings_dialog.c:433
+msgid "Y800"
+msgstr "Y800"
+
+#: ../src/settings_dialog.c:435
+msgid "RGB 24"
+msgstr "RGB 24"
+
+#: ../src/settings_dialog.c:492
+msgid "High Quality / Large Files"
+msgstr "Высокое качество / большой размер файла"
+
+#: ../src/settings_dialog.c:493
+msgid "Medium Quality"
+msgstr "Среднее качество"
+
+#: ../src/settings_dialog.c:494
+msgid "Low Quality / Small Files"
+msgstr "Низкое качество / малый размер файла"
+
+#: ../src/settings_dialog.c:495
+msgid "Custom"
+msgstr "Пользовательский"
+
+#: ../src/settings_dialog.c:509
+msgid "Target Bitrate: "
+msgstr "Целевая скорость передачи информации:"
+
+#: ../src/settings_dialog.c:538
+msgid "kbps"
+msgstr "кбит/с"
+
+#: ../src/settings_dialog.c:544
+msgid "Encoding quality: "
+msgstr "Качество кодирования:"
+
+#: ../src/settings_dialog.c:578
+msgid "Encoding frame rate: "
+msgstr "Частота кадров кодирования:"
+
+#: ../src/settings_dialog.c:629
+msgid "Enable audio recording"
+msgstr "Разрешить запись звука"
+
+#: ../src/settings_dialog.c:639
+msgid "Audio Settings"
+msgstr "Настройки звука"
+
+#: ../src/settings_dialog.c:649
+msgid "Delay audio encoding"
+msgstr "Задержка кодирования звука"
+
+#: ../src/settings_dialog.c:659
+msgid "Audio device: "
+msgstr "Звуковое устройство:"
+
+#: ../src/settings_dialog.c:681
+msgid "Encoding bitrate: "
+msgstr "Скорость передачи информации после кодирования:"
+
+#: ../src/settings_dialog.c:760
+msgid "Video File Path: "
+msgstr "Путь к видеофайлу:"
+
+#: ../src/settings_dialog.c:762
+msgid "Video File Path"
+msgstr "Путь к видеофайлу"
+
+#: ../src/settings_dialog.c:782
+msgid "Video Encoding: "
+msgstr "Способ кодирования видео:"
+
+#: ../src/settings_dialog.c:787
+msgid "OGG/Theora"
+msgstr "OGG/Theora"
+
+#: ../src/settings_dialog.c:790
+msgid "Uncompressed AVI"
+msgstr "AVI без сжатия"
+
+#: ../src/settings_dialog.c:797
+msgid "Encoder Settings"
+msgstr "Параметры кодировщика"
+
+#: ../src/settings_dialog.c:961
+msgid "Active"
+msgstr "Активный"
+
+#: ../src/settings_dialog.c:967
+msgid "Name"
+msgstr "Название"
+
+#: ../src/settings_dialog.c:986
+msgid "_About Plugin"
+msgstr "_О дополнении"
+
+#: ../src/settings_dialog.c:991
+msgid "C_onfigure Plugin"
+msgstr "_Настроить дополнение"
+
+#: ../src/settings_dialog.c:1015
+msgid "Still Image File Path: "
+msgstr "Путь к файлу изображения:"
+
+#: ../src/settings_dialog.c:1017
+msgid "Still Image File Path"
+msgstr "Путь к файлу изображения"
+
+#: ../src/settings_dialog.c:1037
+msgid "Image file type: "
+msgstr "Тип файла изображения:"
+
+#: ../src/settings_dialog.c:1092
+msgid "Time Lapse Action: "
+msgstr "Действие на промежутке времени:"
+
+#: ../src/settings_dialog.c:1099
+msgid "Image Sequence"
+msgstr "Последовательность изображений"
+
+#: ../src/settings_dialog.c:1114
+msgid "Time between capture events:"
+msgstr "Время между захватами изображений:"
+
+#: ../src/settings_dialog.c:1127
+msgid "Automatically stop recording"
+msgstr "Автоматическая остановка записи"
+
+#: ../src/settings_dialog.c:1139
+msgid "After number of frames:"
+msgstr "По достижении числа кадров:"
+
+#: ../src/settings_dialog.c:1150
+msgid "After recording time:"
+msgstr "По достижении времени записи:"
+
+#: ../src/settings_dialog.c:1189
+msgid "ucview Preferences"
+msgstr "Настройки ucview"
+
+#: ../src/settings_dialog.c:1203
+msgid "Video"
+msgstr "Видео"
+
+#: ../src/settings_dialog.c:1205
+msgid "Audio"
+msgstr "Звук"
+
+#: ../src/settings_dialog.c:1207
+msgid "Image"
+msgstr "Изображение"
+
+#: ../src/settings_dialog.c:1211
+msgid "Plugins"
+msgstr "Дополнения"
+
+#: ../src/ucview.c:299
+#, c-format
+msgid ""
+"<b>Crash detected!</b>\n"
+"UCView detected a malfunction of the \n"
+"<i>'%s'</i>\n"
+"plugin. The plugin got disabled."
+msgstr ""
+"<b>Произошёл сбой!</b>\n"
+"UCView определил, что произошёл сбой в расширении\n"
+"<i>'%s'</i>.\n"
+"Расширение будет отключено."
+
+#: ../src/ucview.c:305
+msgid ""
+"<b>Crash detected!</b>\n"
+"UCView detected a crash but it could not find the cause. \n"
+"Please report a bug."
+msgstr ""
+"<b>Произошёл сбой!</b>\n"
+"программа UCView определила, что произошёл сбой, но его причина не "
+"известна. \n"
+"Сообщите, пожалуйста, об ошибке."
+
+#: ../src/ucview.c:455
+msgid "Starting video device..."
+msgstr "Запуск видеоустройства..."
+
+#: ../src/ucview.c:560
+msgid "Failed to start video display!"
+msgstr "Невозможно запустить видеодисплей!"
+
+#: ../src/ucview.c:711
+#, c-format
+msgid ""
+"Picture saved to: \n"
+"<i>%s</i>"
+msgstr ""
+"Изображение сохранено в: \n"
+"<i>%s</i>"
+
+#: ../src/ucview.c:1200
+msgid "Could not initialize DBUS connection :-(\n"
+msgstr "Невозможно инициализировать соединение через DBUS :-(\n"
+
+#: ../src/ucview.c:1214
+msgid "Failed to open device dialog!\n"
+msgstr "Ошибка открытия диалога устройства!\n"
+
+#: ../desktop/ucview.desktop.in.h:1
+msgid "Capture video images"
+msgstr "Сохранение видеоизображений"
+
+#: ../desktop/ucview.desktop.in.h:2
+msgid "Image Capture Application"
+msgstr "Программа для записи видео"
+
+#: ../desktop/ucview.desktop.in.h:3
+msgid "UCView"
+msgstr "UCView"

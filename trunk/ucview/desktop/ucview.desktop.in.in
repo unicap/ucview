@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=@dist_version@
+Encoding=UTF-8
+_Name=UCView
+_GenericName=Image Capture Application
+Type=Application
+_Comment=Capture video images
+Exec=ucview
+TryExec=ucview
+Icon=ucview.png
+Terminal=false
+Categories=Application;AudioVideo;Video;GTK;
+StartupNotify=true

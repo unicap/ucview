@@ -1,0 +1,311 @@
+<gconfschemafile>
+  <schemalist>
+    <schema>
+      <key>/schemas/apps/ucview/scale_to_fit</key>
+      <applyto>/apps/ucview/scale_to_fit</applyto>
+      <owner>ucview</owner>
+      <type>bool</type>
+      <default>TRUE</default>
+      <locale name="C">
+	<short>Scale video image to fit window size</short>
+	<long>Scale video image to fit window size</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/ucview/show_toolbar</key>
+      <applyto>/apps/ucview/show_toolbar</applyto>
+      <owner>ucview</owner>
+      <type>bool</type>
+      <default>TRUE</default>
+      <locale name="C">
+	<short>Show Toolbar</short>
+	<long>Show Toolbar</long>
+      </locale>
+    </schema>
+    
+
+<!-- Settings Video -->
+    <schema>
+      <key>/schemas/apps/ucview/encoder_fastpath</key>
+      <applyto>/apps/ucview/encoder_fastpath</applyto>
+      <owner>ucview</owner>
+      <type>bool</type>
+      <default>FALSE</default>
+      <locale name="C">
+	<short>Encoder Fastpath</short>
+	<long>
+	  Try to lower the resources required for video encoding by
+	  setting the video display to the same color format as the
+	  video encoder and passing the video display buffers to the
+	  encoder without copying the data.
+	</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/ucview/hide_video_saved_box</key>
+      <applyto>/apps/ucview/hide_video_saved_box</applyto>
+      <owner>ucview</owner>
+      <type>bool</type>
+      <default>FALSE</default>
+      <locale name="C">
+	<short>Hide 'Video Saved' box</short>
+	<long>When not set, a info box containing the location of the video file is shown after recording</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/ucview/video_file_path</key>
+      <applyto>/apps/ucview/video_file_path</applyto>
+      <owner>ucview</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+	<short>Path to video file location</short>
+	<long>Path to video file location</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/ucview/video_frame_rate</key>
+      <applyto>/apps/ucview/video_frame_rate</applyto>
+      <owner>ucview</owner>
+      <type>float</type>
+      <default>30.0</default>
+      <locale name="C">
+	<short>Frame rate for video files</short>
+	<long>When recording a video file, resample the video stream to this frame rate</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/ucview/video_theora_bitrate</key>
+      <applyto>/apps/ucview/video_theora_bitrate</applyto>
+      <owner>ucview</owner>
+      <type>int</type>
+      <default>300</default>
+      <locale name="C">
+	<short>Video encoder bitrate</short>
+	<long>Video encoder bitrate</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/ucview/video_theora_combo</key>
+      <applyto>/apps/ucview/video_theora_combo</applyto>
+      <owner>ucview</owner>
+      <type>int</type>
+      <default>2</default>
+      <locale name="C">
+	<short>Video encoder preset</short>
+	<long>Video encoder preset</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/ucview/video_theora_quality</key>
+      <applyto>/apps/ucview/video_theora_quality</applyto>
+      <owner>ucview</owner>
+      <type>int</type>
+      <default>8</default>
+      <locale name="C">
+	<short>Video encoder quality setting</short>
+	<long>Video encoder quality setting</long>
+      </locale>
+    </schema>
+
+    <!-- Image settings -->
+    <schema>
+      <key>/schemas/apps/ucview/hide_image_saved_box</key>
+      <applyto>/apps/ucview/hide_image_saved_box</applyto>
+      <owner>ucview</owner>
+      <type>bool</type>
+      <default>FALSE</default>
+      <locale name="C">
+	<short>Hide 'Image Saved' box</short>
+	<long>Hide 'Image Saved' box</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/still_image_file_path</key>
+      <applyto>/apps/ucview/still_image_file_path</applyto>
+      <owner>ucview</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+	<short>Path for still images</short>
+	<long>Path for still images</long>
+      </locale>
+    </schema>
+    
+    <!-- Audio Settings -->
+
+    <schema>
+      <key>/schemas/apps/ucview/alsa_card</key>
+      <applyto>/apps/ucview/alsa_card</applyto>
+      <owner>ucview</owner>
+      <type>string</type>
+      <default>hw:0,0</default>
+      <locale name="C">
+	<short>Alsa audio card</short>
+	<long>Alsa audio card</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/async_audio_encode</key>
+      <applyto>/apps/ucview/async_audio_encode</applyto>
+      <owner>ucview</owner>
+      <type>bool</type>
+      <default>FALSE</default>
+      <locale name="C">
+	<short>Encode audio data asynchronously</short>
+	<long>Record audio as raw pcm during video recording and
+	reencode as vorbis afterwards to save CPU time during
+	recording.</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/audio_bitrate</key>
+      <applyto>/apps/ucview/audio_bitrate</applyto>
+      <owner>ucview</owner>
+      <type>int</type>
+      <default>128000</default>
+      <locale name="C">
+	<short>Audio encoder bitrate</short>
+	<long>Bitrate setting for vorbis audio encoder</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/record_audio</key>
+      <applyto>/apps/ucview/record_audio</applyto>
+      <owner>ucview</owner>
+      <type>bool</type>
+      <default>TRUE</default>
+      <locale name="C">
+	<short>Record audio</short>
+	<long>Record audio data while recording video</long>
+      </locale>
+    </schema>
+
+    <!-- Miscellaneous settings -->
+    
+    <schema>
+      <key>/schemas/apps/ucview/crash_detected</key>
+      <applyto>/apps/ucview/crash_detected</applyto>
+      <owner>ucview</owner>
+      <type>bool</type>
+      <default>FALSE</default>
+      <locale name="C">
+	<short>Crash detected</short>
+	<long>UCView detected a crash</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/icon-theme-name</key>
+      <applyto>/apps/ucview/icon-theme-name</applyto>
+      <owner>ucview</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+	<short>Icon theme</short>
+	<long>Icon theme</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/remember_device</key>
+      <applyto>/apps/ucview/remember_device</applyto>
+      <owner>ucview</owner>
+      <type>bool</type>
+      <default>TRUE</default>
+      <locale name="C">
+	<short>Remember device</short>
+	<long>Try to reopen a device on next startup</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/scale_to_fit</key>
+      <applyto>/apps/ucview/scale_to_fit</applyto>
+      <owner>ucview</owner>
+      <type>bool</type>
+      <default>TRUE</default>
+      <locale name="C">
+	<short>Scale to fit</short>
+	<long>Scale video to fit current window</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/show_toolbar</key>
+      <applyto>/apps/ucview/show_toolbar</applyto>
+      <owner>ucview</owner>
+      <type>bool</type>
+      <default>TRUE</default>
+      <locale name="C">
+	<short>Show toolbar</short>
+	<long>Show toolbar</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/window_h</key>
+      <applyto>/apps/ucview/window_h</applyto>
+      <owner>ucview</owner>
+      <type>int</type>
+      <default>480</default>
+      <locale name="C">
+	<short>Window height</short>
+	<long>Window height</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/window_w</key>
+      <applyto>/apps/ucview/window_w</applyto>
+      <owner>ucview</owner>
+      <type>int</type>
+      <default>640</default>
+      <locale name="C">
+	<short>Window width</short>
+	<long>Window width</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/window_state</key>
+      <applyto>/apps/ucview/window_state</applyto>
+      <owner>ucview</owner>
+      <type>int</type>
+      <default>0</default>
+      <locale name="C">
+	<short>Window state</short>
+	<long>Window state</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/window_x</key>
+      <applyto>/apps/ucview/window_x</applyto>
+      <owner>ucview</owner>
+      <type>int</type>
+      <default></default>
+      <locale name="C">
+	<short>Window x position</short>
+	<long>Window x position</long>
+      </locale>
+    </schema>
+    
+    <schema>
+      <key>/schemas/apps/ucview/window_y</key>
+      <applyto>/apps/ucview/window_y</applyto>
+      <owner>ucview</owner>
+      <type>int</type>
+      <default></default>
+      <locale name="C">
+	<short>Window y position</short>
+	<long>Window y position</long>
+      </locale>
+    </schema>
+    
+  </schemalist>
+</gconfschemafile>

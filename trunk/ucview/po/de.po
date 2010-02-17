@@ -1,0 +1,741 @@
+# translation of ucview.
+# Copyright (C) 2007 Arne Caspari
+# This file is distributed under the same license as the ucview package.
+# <arne@unicap-imaging.org>, 2007.
+# Arne Caspari <arne@unicap-imaging.org>, 2008.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ucview 0.22\n"
+"Report-Msgid-Bugs-To: arne@unicap-imaging.org\n"
+"POT-Creation-Date: 2008-07-17 18:03+0200\n"
+"PO-Revision-Date: 2008-07-17 18:26+0200\n"
+"Last-Translator:  <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=\n"
+"Content-Transfer-Encoding: "
+
+#: ../data/ucview.schemas.in.h:1
+msgid "Alsa audio card"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:2
+msgid "Audio encoder bitrate"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:3
+msgid "Bitrate setting for vorbis audio encoder"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:4
+msgid "Crash detected"
+msgstr "Absturz erkannt"
+
+#: ../data/ucview.schemas.in.h:5
+msgid "Encode audio data asynchronously"
+msgstr "Zeitversetztes kodieren der Audiodaten"
+
+#: ../data/ucview.schemas.in.h:6
+msgid "Encoder Fastpath"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:7
+msgid "Frame rate for video files"
+msgstr "Bildwiederholrate für Videodateien"
+
+#: ../data/ucview.schemas.in.h:8
+msgid "Hide 'Image Saved' box"
+msgstr "'Bild gespeichert' Infomeldung verbergen"
+
+#: ../data/ucview.schemas.in.h:9
+msgid "Hide 'Video Saved' box"
+msgstr "'Videodatei gespeichert' Infomeldung verbergen"
+
+#: ../data/ucview.schemas.in.h:10
+msgid "Icon theme"
+msgstr "Iconthema"
+
+#: ../data/ucview.schemas.in.h:11
+msgid "Path for still images"
+msgstr "Speicherort für Einzelbilder"
+
+#: ../data/ucview.schemas.in.h:12
+msgid "Path to video file location"
+msgstr "Speicherort für Videodateien"
+
+#: ../data/ucview.schemas.in.h:13
+msgid "Record audio"
+msgstr "Audio aufnehmen"
+
+#: ../data/ucview.schemas.in.h:14
+msgid ""
+"Record audio as raw pcm during video recording and reencode as vorbis "
+"afterwards to save CPU time during recording."
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:15
+msgid "Record audio data while recording video"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:16
+msgid "Remember device"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:17
+msgid "Scale to fit"
+msgstr "Einpassen"
+
+#: ../data/ucview.schemas.in.h:18
+msgid "Scale video image to fit window size"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:19
+msgid "Scale video to fit current window"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:20
+msgid "Show Toolbar"
+msgstr "Werkzeugleiste anzeigen"
+
+#: ../data/ucview.schemas.in.h:21
+msgid "Show toolbar"
+msgstr "Werkzeugleiste anzeigen"
+
+#: ../data/ucview.schemas.in.h:22
+msgid ""
+"Try to lower the resources required for video encoding by setting the video "
+"display to the same color format as the video encoder and passing the video "
+"display buffers to the encoder without copying the data."
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:23
+msgid "Try to reopen a device on next startup"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:24
+msgid "UCView detected a crash"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:25
+msgid "Video encoder bitrate"
+msgstr "Videobitrate"
+
+#: ../data/ucview.schemas.in.h:26
+msgid "Video encoder preset"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:27
+msgid "Video encoder quality setting"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:28
+msgid ""
+"When not set, a info box containing the location of the video file is shown "
+"after recording"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:29
+msgid ""
+"When recording a video file, resample the video stream to this frame rate"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:30
+msgid "Window height"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:31
+msgid "Window state"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:32
+msgid "Window width"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:33
+msgid "Window x position"
+msgstr ""
+
+#: ../data/ucview.schemas.in.h:34
+msgid "Window y position"
+msgstr ""
+
+#: ../plugins/barcode/barcode.c:71
+msgid "Enable Barcode"
+msgstr ""
+
+#: ../plugins/cam_test/cam_test.c:81
+msgid "Enable Start/Stop Test"
+msgstr ""
+
+#: ../plugins/cam_test/cam_test.c:83
+msgid "Enable Trigger Test"
+msgstr ""
+
+#. if( data->img_wait )
+#. {
+#. sprintf( text, _("Waiting... Cycle: %d" ), cnt );
+#. gtk_statusbar_pop( GTK_STATUSBAR( data->ucv->statusbar ), 1 );
+#. gtk_statusbar_push( GTK_STATUSBAR( data->ucv->statusbar ), 1, text );
+#. return TRUE;
+#. }
+#. if( !data->img_ok )
+#. {
+#. data->img_wait = TRUE;
+#. }
+#. else
+#. {
+#: ../plugins/cam_test/cam_test.c:113
+#, c-format
+msgid "Cycle: %d   OK"
+msgstr ""
+
+#: ../plugins/dark_frame/dark_frame.c:63
+msgid "Capture Dark Frame"
+msgstr ""
+
+#: ../plugins/dark_frame/dark_frame.c:69
+msgid "Enable Dark Frame Subtraction"
+msgstr ""
+
+#: ../plugins/face_detect/face_detect.c:73
+msgid "Enable Face Detect"
+msgstr ""
+
+#: ../plugins/histogram/histogram.c:135
+msgid "Display Histogram"
+msgstr "Histogram anzeigen"
+
+#: ../plugins/histogram/histogram.c:190
+msgid "Histogram Settings"
+msgstr "Histogram-Einstellungen"
+
+#: ../plugins/histogram/histogram.c:196
+msgid "Show histogram: "
+msgstr "Histogram anzeigen: "
+
+#: ../plugins/histogram/histogram.c:198
+msgid "Overlay video image"
+msgstr "Videobild überlagern"
+
+#. gtk_combo_box_append_text( GTK_COMBO_BOX( combo ), _( "Sidebar" ) );
+#: ../plugins/histogram/histogram.c:200
+msgid "Window"
+msgstr "Fenster"
+
+#: ../plugins/histogram/histogram.c:209
+msgid "Opacity:"
+msgstr "Transparenz:"
+
+#: ../plugins/histogram/histogram.c:303
+msgid "Histogram"
+msgstr "Histogram"
+
+#: ../plugins/multislope/multislope.c:75
+msgid "Enable Multislope"
+msgstr ""
+
+#: ../plugins/multislope/multislope.glade.h:1
+msgid "Configure Multislope"
+msgstr ""
+
+#: ../plugins/multislope/multislope.glade.h:2
+msgid "First Slope:"
+msgstr ""
+
+#: ../plugins/multislope/multislope.glade.h:3
+msgid "Second Slope:"
+msgstr ""
+
+#. { "EnableStartStopTest", NULL, N_("Enable Start/Stop Test"), NULL, N_("Enable Start/Stop Test"),
+#. G_CALLBACK( enable_start_stop_cb ) },
+#. { "EnableTriggerTest", NULL, N_("Enable Trigger Test"), NULL, N_("Enable Trigger Test"),
+#. G_CALLBACK( enable_trigger_cb ) },
+#: ../plugins/skeleton/skeleton.c:85 ../plugins/timelapse/timelapse.c:84
+msgid "Time Lapse Record"
+msgstr "Zeitrafferaufnahme"
+
+#: ../plugins/warp/warp.c:123
+msgid "Enable Warp"
+msgstr ""
+
+#: ../src/gui.c:118
+msgid "_File"
+msgstr "_Datei"
+
+#: ../src/gui.c:119
+msgid "_Device"
+msgstr "_Gerät"
+
+#: ../src/gui.c:120
+msgid "Change Video Format"
+msgstr "Video format wechseln"
+
+#: ../src/gui.c:121
+msgid "Change Resolution"
+msgstr "Videoauflösung wechseln"
+
+#: ../src/gui.c:122
+msgid "_Edit"
+msgstr "_Bearbeiten"
+
+#: ../src/gui.c:123
+msgid "_View"
+msgstr "_Ansicht"
+
+#: ../src/gui.c:124
+msgid "_Tools"
+msgstr "_Werkzeuge"
+
+#: ../src/gui.c:125
+msgid "_Help"
+msgstr "_Hilfe"
+
+#: ../src/gui.c:127
+msgid "_Quit"
+msgstr "_Beenden"
+
+#: ../src/gui.c:127
+msgid "Quit"
+msgstr "Beenden"
+
+#: ../src/gui.c:128
+msgid "_Copy"
+msgstr "_Kopieren"
+
+#: ../src/gui.c:128
+msgid "Copy"
+msgstr "Kopieren"
+
+#: ../src/gui.c:129
+msgid "_Adjustments"
+msgstr "_Kamerasteuerung"
+
+#: ../src/gui.c:129
+msgid "Adjustments"
+msgstr "Kamerasteuerung"
+
+#: ../src/gui.c:130
+msgid "_Preferences"
+msgstr "Einstellungen"
+
+#: ../src/gui.c:130 ../src/icons.c:31
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: ../src/gui.c:132
+msgid "_Change Device"
+msgstr "Videogerät Auswählen"
+
+#: ../src/gui.c:132
+msgid "Change Device"
+msgstr "Videogerät auswählen"
+
+#: ../src/gui.c:133 ../src/icons.c:27
+msgid "_Save Image"
+msgstr "Bild Speichern"
+
+#: ../src/gui.c:133
+msgid "Save Still Image"
+msgstr "Standbild speichern"
+
+#: ../src/gui.c:135 ../src/icons.c:32
+msgid "Fullscreen"
+msgstr "Vollbild"
+
+#: ../src/gui.c:136 ../src/icons.c:33
+msgid "Leave Fullscreen"
+msgstr "Vollbild verlassen"
+
+#: ../src/gui.c:149 ../src/icons.c:30
+msgid "P_ause"
+msgstr "P_ause"
+
+#: ../src/gui.c:149
+msgid "Pause"
+msgstr "Pause"
+
+#: ../src/gui.c:150 ../src/icons.c:28
+msgid "_Record Video"
+msgstr "Video aufnehmen"
+
+#: ../src/gui.c:150 ../src/settings_dialog.c:1137
+msgid "Record Video"
+msgstr "Video aufnehmen"
+
+#: ../src/gui.c:151
+msgid "_Time Lapse"
+msgstr "_Zeitraffer"
+
+#: ../src/gui.c:151 ../src/settings_dialog.c:1249
+msgid "Time Lapse"
+msgstr "Zeitraffer"
+
+#: ../src/gui.c:152 ../src/icons.c:29
+msgid "_Play Video"
+msgstr "Video _abspielen"
+
+#: ../src/gui.c:152
+msgid "Play Video"
+msgstr "Video wiedergeben"
+
+#: ../src/gui.c:154
+msgid "Show _FPS"
+msgstr "Bild_rate anzeigen"
+
+#: ../src/gui.c:154
+msgid "Show FPS"
+msgstr "Bildrate anzeigen"
+
+#: ../src/gui.c:160
+msgid "_Scale To Fit"
+msgstr "_Einpassen"
+
+#: ../src/gui.c:160
+msgid "Scale To Fit"
+msgstr "Einpassen"
+
+#: ../src/gui.c:165
+msgid "_Toolbar"
+msgstr "_Werkzeugleiste"
+
+#: ../src/gui.c:165
+msgid "Toolbar"
+msgstr "Werkzeugleiste"
+
+#: ../src/gui.c:170
+msgid "Side_bar"
+msgstr "Seitenleiste"
+
+#: ../src/gui.c:170
+msgid "Sidebar"
+msgstr "Seitenleiste"
+
+#: ../src/icons.c:26
+msgid "_Device Settings"
+msgstr "_Geräteeinstellungen"
+
+#: ../src/time_selection.c:90
+msgid "days"
+msgstr "Tage"
+
+#: ../src/time_selection.c:93
+msgid "hours"
+msgstr "Stunden"
+
+#: ../src/time_selection.c:96
+msgid "minutes"
+msgstr "Minuten"
+
+#: ../src/time_selection.c:99
+msgid "seconds"
+msgstr "Sekunden"
+
+#: ../src/ucview.glade.h:1 ../src/device_dialog.c:134
+msgid "<b>Device:</b>"
+msgstr "<b>Gerät:</b>"
+
+#: ../src/ucview.glade.h:2 ../src/device_dialog.c:141
+msgid "<b>Video Format:</b>"
+msgstr "<b>Video Format:</b>"
+
+#: ../src/ucview.glade.h:3
+msgid "This is a placeholder for the button bar"
+msgstr ""
+
+#: ../src/ucview.glade.h:4
+msgid "This is a placeholder for the menu bar"
+msgstr ""
+
+#: ../src/ucview.glade.h:5
+msgid "ucview"
+msgstr ""
+
+#: ../src/ucview_dbus_server.c:350 ../src/callbacks.c:644
+msgid "Looking for video capture devices"
+msgstr "Suche nach Videoaufnahmegeräten"
+
+#: ../src/device_dialog.c:128
+msgid "Select Device"
+msgstr "Gerät auswählen"
+
+#: ../src/device_dialog.c:150
+msgid "Remember selection and use as default in the future"
+msgstr "Auswahl speichern und als Vorgabe verwenden"
+
+#: ../src/callbacks.c:172
+#, c-format
+msgid "%.1f FPS"
+msgstr "%.1f FPS"
+
+#: ../src/callbacks.c:430
+msgid "Failed to start video recording!"
+msgstr "Die Videoaufnahme konnte nicht gestartet werden!"
+
+#: ../src/callbacks.c:459
+msgid "Processing video file"
+msgstr "Verarbeite Videodatei"
+
+#: ../src/callbacks.c:489
+#, c-format
+msgid ""
+"Video saved to: \n"
+"<i>%s</i>"
+msgstr "Videodate gespeichert als: \n"
+"<i>%s</i>"
+
+#: ../src/callbacks.c:496 ../src/ucview.c:720
+msgid "Do not show this message again"
+msgstr "Diese Meldung nicht mehr anzeigen"
+
+#: ../src/settings_dialog.c:424
+msgid "Colorformat: "
+msgstr "Farbformat: "
+
+#: ../src/settings_dialog.c:429
+msgid "From Capture Device"
+msgstr ""
+
+#: ../src/settings_dialog.c:431
+msgid "UYVY"
+msgstr ""
+
+#: ../src/settings_dialog.c:433
+msgid "Y800"
+msgstr ""
+
+#: ../src/settings_dialog.c:435
+msgid "RGB 24"
+msgstr ""
+
+#: ../src/settings_dialog.c:489
+msgid "Video Size:"
+msgstr "Videogröße: "
+
+#: ../src/settings_dialog.c:496
+msgid "Original"
+msgstr "Original"
+
+#: ../src/settings_dialog.c:498
+msgid "Half Size"
+msgstr "Halbe Größe"
+
+#: ../src/settings_dialog.c:500
+msgid "Quarter Size"
+msgstr "Viertelgröße"
+
+#: ../src/settings_dialog.c:530
+msgid "High Quality / Large Files"
+msgstr "Beste Qualität / Große Dateien"
+
+#: ../src/settings_dialog.c:531
+msgid "Medium Quality"
+msgstr "Mittlere Qualität"
+
+#: ../src/settings_dialog.c:532
+msgid "Low Quality / Small Files"
+msgstr "Einfache Qualität / Kleine Dateien"
+
+#: ../src/settings_dialog.c:533
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+#: ../src/settings_dialog.c:549
+msgid "Target Bitrate: "
+msgstr "Zielbitrate:"
+
+#: ../src/settings_dialog.c:578
+msgid "kbps"
+msgstr "kbps"
+
+#: ../src/settings_dialog.c:584
+msgid "Encoding quality: "
+msgstr "Kodierqualiät:"
+
+#: ../src/settings_dialog.c:618
+msgid "Encoding frame rate: "
+msgstr "Bildwiederholrate: "
+
+#: ../src/settings_dialog.c:669
+msgid "Enable audio recording"
+msgstr "Audio aufnehmen"
+
+#: ../src/settings_dialog.c:679
+msgid "Audio Settings"
+msgstr "Audioeinstellungen"
+
+#: ../src/settings_dialog.c:689
+msgid "Delay audio encoding"
+msgstr "Zeitversetzte Audiokodierung"
+
+#: ../src/settings_dialog.c:699
+msgid "Audio device: "
+msgstr "Audiogerät: "
+
+#: ../src/settings_dialog.c:721
+msgid "Encoding bitrate: "
+msgstr "Kodierungsbitrate: "
+
+#: ../src/settings_dialog.c:800
+msgid "Video File Path: "
+msgstr "Speicherort der Videodateien"
+
+#: ../src/settings_dialog.c:802
+msgid "Video File Path"
+msgstr "Speicherort der Videodateien"
+
+#: ../src/settings_dialog.c:822
+msgid "Video Encoding: "
+msgstr "Videokodierung: "
+
+#: ../src/settings_dialog.c:827
+msgid "OGG/Theora"
+msgstr ""
+
+#: ../src/settings_dialog.c:830
+msgid "Uncompressed AVI"
+msgstr "Unkomprimiertes AVI"
+
+#: ../src/settings_dialog.c:837
+msgid "Encoder Settings"
+msgstr "Einstellungen des Videokodierers"
+
+#: ../src/settings_dialog.c:1001
+msgid "Active"
+msgstr "Aktiv"
+
+#: ../src/settings_dialog.c:1007
+msgid "Name"
+msgstr "Name"
+
+#: ../src/settings_dialog.c:1026
+msgid "_About Plugin"
+msgstr "Plugin Details"
+
+#: ../src/settings_dialog.c:1031
+msgid "C_onfigure Plugin"
+msgstr "Plugineinstellungen"
+
+#: ../src/settings_dialog.c:1055
+msgid "Still Image File Path: "
+msgstr "Speicherort der Bilddateien"
+
+#: ../src/settings_dialog.c:1057
+msgid "Still Image File Path"
+msgstr "Speicherort der Bilddateien"
+
+#: ../src/settings_dialog.c:1077
+msgid "Image file type: "
+msgstr "Dateityp für Bilder: "
+
+#: ../src/settings_dialog.c:1132
+msgid "Time Lapse Action: "
+msgstr "Zeitrafferverhalten: "
+
+#: ../src/settings_dialog.c:1139
+msgid "Image Sequence"
+msgstr "Bildsequenz"
+
+#: ../src/settings_dialog.c:1154
+msgid "Time between capture events:"
+msgstr "Dauer zwischen Aufnahmen"
+
+#: ../src/settings_dialog.c:1167
+msgid "Automatically stop recording"
+msgstr "Aufnahme automatisch anhalten"
+
+#: ../src/settings_dialog.c:1179
+msgid "After number of frames:"
+msgstr "Nach x Aufnahmen: "
+
+#: ../src/settings_dialog.c:1190
+msgid "After recording time:"
+msgstr "Nach Aufnahmezeit:"
+
+#: ../src/settings_dialog.c:1229
+msgid "ucview Preferences"
+msgstr "Programmoptionen"
+
+#: ../src/settings_dialog.c:1243
+msgid "Video"
+msgstr "Video"
+
+#: ../src/settings_dialog.c:1245
+msgid "Audio"
+msgstr ""
+
+#: ../src/settings_dialog.c:1247
+msgid "Image"
+msgstr "Bilder"
+
+#: ../src/settings_dialog.c:1251
+msgid "Plugins"
+msgstr "Erweiterungen"
+
+#: ../src/ucview.c:299
+#, c-format
+msgid ""
+"<b>Crash detected!</b>\n"
+"UCView detected a malfunction of the \n"
+"<i>'%s'</i>\n"
+"plugin. The plugin got disabled."
+msgstr ""
+"<b>Programmabsturz erkannt!</b>\n"
+"UCView hat eine Fehlfunction in der \n"
+"<i>'%s'</i>\n"
+"-Erweiterung erkannt. Die Erweiterung wurde abgeschaltet."
+
+#: ../src/ucview.c:305
+msgid ""
+"<b>Crash detected!</b>\n"
+"UCView detected a crash but it could not find the cause. \n"
+"Please report a bug."
+msgstr ""
+"<b>Absturz erkannt!</b>\n"
+"UCView hat einen Absturz erkannt, konnte die Ursache jedoch nicht "
+"ermitteln. \n"
+"Bitte erstellen Sie einen Bug-Report."
+
+#: ../src/ucview.c:455
+msgid "Starting video device..."
+msgstr "Starten des Videogerätes..."
+
+#: ../src/ucview.c:560
+msgid "Failed to start video display!"
+msgstr "Die Videoanzeige konnte nicht gestartet werden!"
+
+#: ../src/ucview.c:711
+#, c-format
+msgid ""
+"Picture saved to: \n"
+"<i>%s</i>"
+msgstr ""
+"Bild gespeichert als: \n"
+"<i>%s</i>"
+
+#: ../src/ucview.c:1198
+msgid "Could not initialize DBUS connection :-(\n"
+msgstr "Die DBUS-Verbindung konnte nicht aufgebaut werden :-(\n"
+
+#: ../src/ucview.c:1212
+msgid "Failed to open device dialog!\n"
+msgstr "Der Geräteauswahldialog konnte nicht geöffnet werden!\n"
+
+#: ../desktop/ucview.desktop.in.h:1
+msgid "Capture video images"
+msgstr "Aufnahme von Videobildern"
+
+#: ../desktop/ucview.desktop.in.h:2
+msgid "Image Capture Application"
+msgstr "Videoanwendung"
+
+#: ../desktop/ucview.desktop.in.h:3
+msgid "UCView"
+msgstr "UCView"
+
+#~ msgid "_Measure"
+#~ msgstr "_Messung"
+
+#~ msgid "Measure"
+#~ msgstr "Messung"

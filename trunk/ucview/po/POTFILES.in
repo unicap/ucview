@@ -1,0 +1,22 @@
+data/ucview.schemas.in
+plugins/barcode/barcode.c
+plugins/cam_test/cam_test.c
+plugins/dark_frame/dark_frame.c
+plugins/face_detect/face_detect.c
+plugins/histogram/histogram.c
+plugins/multislope/multislope.c
+plugins/multislope/multislope.glade
+plugins/skeleton/skeleton.c
+plugins/timelapse/timelapse.c
+plugins/warp/warp.c
+src/gui.c
+src/icons.c
+src/time_selection.c
+src/ucview.glade
+src/ucview_dbus_server.c
+src/device_dialog.c
+src/callbacks.c
+src/settings_dialog.c
+src/ucview.c
+# files added by intltool-prepare
+desktop/ucview.desktop.in
