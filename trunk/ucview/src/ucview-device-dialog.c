@@ -105,21 +105,6 @@ static void create_dlg( UCViewDeviceDialog *dlg, gboolean restore_device )
 	    }
 	 }
       }
-/*       if( handle == NULL ) */
-/*       { */
-/* 	 unicap_device_t device; */
-	 
-/* 	 if( !SUCCESS( unicap_enumerate_devices( NULL, &device, 1 ) ) ) */
-/* 	 { */
-/* 	    if( SUCCESS( unicap_enumerate_devices( NULL, &device, 0 ) ) ) */
-/* 	    { */
-/* 	       if( !unicap_is_stream_locked( &device ) ) */
-/* 	       { */
-/* 		  unicap_open( &handle, &device ); */
-/* 	       } */
-/* 	    } */
-/* 	 } */
-/*       } */
       g_object_unref( client );
    }
    

@@ -49,7 +49,6 @@
 
 
 
-
 void gconf_notification_cb( GConfClient *client, guint cnxn_id, GConfEntry *entry, UCViewWindow *window )
 {
    const gchar *key = gconf_entry_get_key( entry );
@@ -486,13 +485,27 @@ void device_dialog_ok_clicked_cb( GtkButton *button, UCViewDeviceDialog *dialog 
    g_assert( window );
 
    handle = ucview_device_dialog_get_handle( dialog );
+
    if( handle ){
+      unicap_device_t current_device;
+      unicap_device_t selected_device;
       unicap_format_t format;
       ucview_device_dialog_get_format( dialog, &format );
-      ucview_window_set_handle( window, handle );
-      ucview_window_set_video_format( window, &format );
-      ucview_window_start_live( window );
-      ucview_window_clear_info_box( window );
+      
+      unicap_get_device (window->device_handle, &current_device);
+      unicap_get_device (handle, &selected_device);
+      
+      if (!strcmp (current_device.identifier, selected_device.identifier)){
+	 ucview_window_stop_live (window);
+	 ucview_window_set_video_format( window, &format );
+	 ucview_window_start_live (window);
+	 unicap_close (handle);
+      } else {
+	 ucview_window_set_handle( window, handle );
+	 ucview_window_set_video_format( window, &format );
+	 ucview_window_start_live( window );
+	 ucview_window_clear_info_box( window );
+      }
    }
 
    gtk_widget_destroy( GTK_WIDGET(dialog) );
@@ -502,7 +515,7 @@ void change_device_cb( GtkAction *action, UCViewWindow *window )
 {
    GtkWidget *device_dialog;
    unicap_device_t device;
-
+   
    unicap_get_device( window->device_handle, &device );
    
    device_dialog = g_object_new( UCVIEW_DEVICE_DIALOG_TYPE, "restore-device", FALSE, NULL );
@@ -512,8 +525,6 @@ void change_device_cb( GtkAction *action, UCViewWindow *window )
    g_object_set_data( G_OBJECT(device_dialog), "ucview_window", window );
    g_signal_connect( UCVIEW_DEVICE_DIALOG(device_dialog)->ok_button, "clicked", (GCallback)device_dialog_ok_clicked_cb, device_dialog );
    g_signal_connect( device_dialog, "delete-event", (GCallback)gtk_widget_destroy, NULL );
-
-   return;   
 }
 
 void pause_state_toggled_cb( GtkAction *action, UCViewWindow *window )

@@ -12,7 +12,7 @@
 #include <time.h>
 #include <sys/time.h>
 
-#include <ucview/ucview.h>
+#include <ucview.h>
 
 #define UCVIEW_GCONF_DIR "/apps/ucview"
 #define UCVIEW_PLUGIN_GCONF_DIR "plugins"
