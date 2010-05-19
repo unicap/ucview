@@ -16,6 +16,16 @@
 # Conflicts: autoconf 2.13
 set -e
 
+# run autogen.sh in subdirectories first
+for d in `ls`; do
+    if test -d "${d}"; then
+	if test -x "${d}/autogen.sh"; then
+	    echo Running autogen in ${d}
+	    ${d}/autogen.sh
+	fi
+    fi
+done
+
 # Refresh GNU autotools toolchain.
 echo Cleaning autotools files...
 find -type d -name autom4te.cache -print0 | xargs -0 rm -rf \;
@@ -26,7 +36,6 @@ find -type f \( -name missing -o -name install-sh -o -name mkinstalldirs \
 
 echo Running autoreconf...
 autoreconf --force --install
-
 
 # For the Debian package build
 test -d debian && {
@@ -69,5 +78,6 @@ test -d debian && {
 		touch debian/deletable.files
 	fi
 }
+
 
 exit 0
