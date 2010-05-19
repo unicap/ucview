@@ -6,7 +6,7 @@ AC_INIT()
 dist_version=0.1
 AC_SUBST(dist_version)
 AM_INIT_AUTOMAKE(ucview_debayer_plugin, $dist_version)
-
+AC_CONFIG_MACRO_DIR([m4])
 
 AC_CONFIG_HEADER([config.h])
 
