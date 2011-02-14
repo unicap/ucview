@@ -42,6 +42,7 @@
 #include "ucview-window.h"
 #include "icons.h"
 #include "ucview-device-dialog.h"
+#include "callbacks.h"
 
 
 static gboolean create_main_window()
@@ -55,7 +56,7 @@ static gboolean create_main_window()
    gtk_widget_show_all( device_dialog );
    handle = ucview_device_dialog_run( UCVIEW_DEVICE_DIALOG( device_dialog ) );
    ucview_device_dialog_get_format( UCVIEW_DEVICE_DIALOG( device_dialog ), &format );
-   gtk_widget_destroy( device_dialog );
+   gtk_widget_hide( device_dialog );
 
    if( !handle )
    {
@@ -64,6 +65,9 @@ static gboolean create_main_window()
 
    icons_add_stock_items();
    ucv = ucview_window_new( handle );
+   g_object_set_data (device_dialog, "ucview_window", ucv);
+   g_signal_connect( UCVIEW_DEVICE_DIALOG(device_dialog)->ok_button, "clicked", (GCallback)device_dialog_ok_clicked_cb, device_dialog );
+   ucview_window_set_device_dialog (ucv, device_dialog);
    ucview_window_set_video_format( UCVIEW_WINDOW( ucv ), &format );
    ucview_window_start_live( UCVIEW_WINDOW( ucv ) );
    

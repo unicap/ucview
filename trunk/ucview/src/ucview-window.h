@@ -153,6 +153,8 @@ void ucview_window_deregister_image_file_type( UCViewWindow *window, gchar *file
 
 GtkUIManager *ucview_window_get_ui_manager( UCViewWindow *ucv );
 GtkWidget *ucview_window_get_statusbar( UCViewWindow *ucv );
+void ucview_window_set_device_dialog (UCViewWindow *ucv, GtkWidget *dlg);
+GtkWidget *ucview_window_get_device_dialog (UCViewWindow *ucv);
 
 
 #endif//__UCVIEW_WINDOW_H__

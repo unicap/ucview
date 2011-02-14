@@ -36,6 +36,7 @@
 #include <ucil.h>
 
 #include "ucview-window.h"
+#include "ucview-device-dialog.h"
 
 void gconf_notification_cb( GConfClient *client, guint cnxn_id, GConfEntry *entry, UCViewWindow *window );
 gboolean fs_toolbar_enter_notify_cb( GtkWidget *widget, GdkEventCrossing *event, UCViewWindow *window );
@@ -53,5 +54,6 @@ void display_property_dialog_cb( GtkAction *action, UCViewWindow *window );
 void display_settings_dialog_cb( GtkAction *action, UCViewWindow *window );
 
 void change_device_cb( GtkAction *action, UCViewWindow *window );
+void device_dialog_ok_clicked_cb( GtkButton *button, UCViewDeviceDialog *dialog );
 
 #endif 	    /* !CALLBACKS_H_ */

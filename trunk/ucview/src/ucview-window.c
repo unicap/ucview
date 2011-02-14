@@ -52,7 +52,6 @@
 
 #include "ucview.h"
 #include "ucview-window.h"
-#include "ucview-device-dialog.h"
 #include "settings_dialog.h"
 #include "ucview-info-box.h"
 #include "checkperm.h"
@@ -133,14 +132,15 @@ struct _ImageFileTypeDetail
 
 struct _UCViewWindowPrivate
 {
-   GtkUIManager *ui;
-   GtkWidget *statusbar;
-   gdouble fps_times[FPS_VALUES];
-   GTimer *fps_timer;
-   gdouble fps;
-   gint fps_timeout;
-
-   GList *image_file_types;
+	GtkUIManager *ui;
+	GtkWidget *statusbar;
+	GtkWidget *device_dialog;
+	gdouble fps_times[FPS_VALUES];
+	GTimer *fps_timer;
+	gdouble fps;
+	gint fps_timeout;
+	
+	GList *image_file_types;
 };
 
 
@@ -1274,6 +1274,16 @@ GtkUIManager *ucview_window_get_ui_manager( UCViewWindow *ucv )
 GtkWidget *ucview_window_get_statusbar( UCViewWindow *ucv )
 {
    return ucv->priv->statusbar;
+}
+
+void ucview_window_set_device_dialog (UCViewWindow *ucv, GtkWidget *dlg)
+{
+	ucv->priv->device_dialog = dlg;
+}
+
+GtkWidget *ucview_window_get_device_dialog (UCViewWindow *ucv)
+{
+	return ucv->priv->device_dialog;
 }
 
 static gboolean fps_timeout_cb( UCViewWindow *window )

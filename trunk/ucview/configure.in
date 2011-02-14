@@ -5,7 +5,7 @@ AC_INIT()
 AC_CONFIG_SRCDIR([src/ucview.c])
 AC_CONFIG_MACRO_DIR([m4])
 
-dist_version=0.32
+dist_version=0.33
 AC_SUBST(dist_version)
 
 AM_INIT_AUTOMAKE(ucview, $dist_version )
@@ -37,7 +37,7 @@ PKG_CHECK_MODULES(GLIB, glib-2.0 >= 2.8.0)
 
 
 PKG_CHECK_MODULES(UCVIEW,
-		  libunicapgtk >= 0.2.23 gtk+-2.0 >= 2.8.0 gthread-2.0 >= 2.8.0 gconf-2.0 libucil >= 0.2.2 libglade-2.0 )
+		  libunicapgtk >= 0.2.23 gtk+-2.0 >= 2.8.0 gthread-2.0 >= 2.8.0 gconf-2.0 libucil >= 0.2.2 libglade-2.0, gdk-pixbuf-2.0 )
 
 #CPPFLAGS="${CPPFLAGS} -DG_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED -DGDK_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED"
 

@@ -508,23 +508,24 @@ void device_dialog_ok_clicked_cb( GtkButton *button, UCViewDeviceDialog *dialog 
       }
    }
 
-   gtk_widget_destroy( GTK_WIDGET(dialog) );
+   gtk_widget_hide( GTK_WIDGET(dialog) );
 }
 
 void change_device_cb( GtkAction *action, UCViewWindow *window )
 {
-   GtkWidget *device_dialog;
-   unicap_device_t device;
+	gtk_widget_show (ucview_window_get_device_dialog (window));
+   /* GtkWidget *device_dialog; */
+   /* unicap_device_t device; */
    
-   unicap_get_device( window->device_handle, &device );
+   /* unicap_get_device( window->device_handle, &device ); */
    
-   device_dialog = g_object_new( UCVIEW_DEVICE_DIALOG_TYPE, "restore-device", FALSE, NULL );
-   ucview_device_dialog_select_device( UCVIEW_DEVICE_DIALOG( device_dialog), &device );
-   gtk_widget_show_all( device_dialog );
+   /* device_dialog = g_object_new( UCVIEW_DEVICE_DIALOG_TYPE, "restore-device", FALSE, NULL ); */
+   /* ucview_device_dialog_select_device( UCVIEW_DEVICE_DIALOG( device_dialog), &device ); */
+   /* gtk_widget_show_all( device_dialog ); */
 
-   g_object_set_data( G_OBJECT(device_dialog), "ucview_window", window );
-   g_signal_connect( UCVIEW_DEVICE_DIALOG(device_dialog)->ok_button, "clicked", (GCallback)device_dialog_ok_clicked_cb, device_dialog );
-   g_signal_connect( device_dialog, "delete-event", (GCallback)gtk_widget_destroy, NULL );
+   /* g_object_set_data( G_OBJECT(device_dialog), "ucview_window", window ); */
+   /* g_signal_connect( UCVIEW_DEVICE_DIALOG(device_dialog)->ok_button, "clicked", (GCallback)device_dialog_ok_clicked_cb, device_dialog ); */
+   /* g_signal_connect( device_dialog, "delete-event", (GCallback)gtk_widget_destroy, NULL ); */
 }
 
 void pause_state_toggled_cb( GtkAction *action, UCViewWindow *window )
