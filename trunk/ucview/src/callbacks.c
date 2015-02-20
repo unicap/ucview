@@ -228,9 +228,16 @@ void record_toggled_cb( GtkAction *action, UCViewWindow *window )
       }
       
       path = gconf_client_get_string( window->client, UCVIEW_GCONF_DIR "/video_file_path", NULL );
+      if (!path || !strlen(path)){
+	 g_free (path);
+	 // default to user home directory, if path is not set.
+	 path = g_strdup( g_get_home_dir ());
+      }
+
       if( !g_file_test( path, ( G_FILE_TEST_IS_DIR ) ) )
       {
 	 g_warning( "Invalid path: %s\n", path );
+	 g_free (path);
 	 return;
       }
 
@@ -258,6 +265,9 @@ void record_toggled_cb( GtkAction *action, UCViewWindow *window )
 	 g_free( window->video_filename );
 	 window->video_filename = NULL;
       }
+
+      g_free (path);
+      path = NULL;
 
       g_signal_emit( G_OBJECT( window ), ucview_signals[ UCVIEW_RECORD_START_SIGNAL ], 0, codec, filename );
       
