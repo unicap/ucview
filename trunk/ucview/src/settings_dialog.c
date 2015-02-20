@@ -561,7 +561,7 @@ static GtkWidget *create_theora_settings_vbox( SettingsDialog *dlg )
       
       default_value = gconf_client_get_int( dlg->client, UCVIEW_GCONF_DIR "/video_theora_bitrate", NULL );
       
-      adj = GTK_ADJUSTMENT( gtk_adjustment_new( default_value, 100.0, 10000.0, 50.0, 250.0, 250.0 ) );
+      adj = GTK_ADJUSTMENT( gtk_adjustment_new( default_value, 100.0, 10000.0, 50.0, 250.0, 0.0 ) );
       if( ( default_value < 100 ) || ( default_value > 10000 ) )
       {
 	 gtk_adjustment_set_value( adj, 800.0 );
@@ -597,7 +597,7 @@ static GtkWidget *create_theora_settings_vbox( SettingsDialog *dlg )
 
       default_value = gconf_client_get_int( dlg->client, UCVIEW_GCONF_DIR "/video_theora_quality", NULL );
       
-      adj = GTK_ADJUSTMENT( gtk_adjustment_new( default_value, 0.0, 63.0, 1.0, 5.0, 5.0 ) );
+      adj = GTK_ADJUSTMENT( gtk_adjustment_new( default_value, 0.0, 63.0, 1.0, 5.0, 0.0 ) );
       if( ( default_value < 0 ) || ( default_value > 63 ) )
       {
 	 gtk_adjustment_set_value( adj, 16.0 );
@@ -631,7 +631,7 @@ static GtkWidget *create_theora_settings_vbox( SettingsDialog *dlg )
 
       default_value = gconf_client_get_float( dlg->client, UCVIEW_GCONF_DIR "/video_frame_rate", NULL );
       
-      adj = GTK_ADJUSTMENT( gtk_adjustment_new( default_value, 0.0, 120.0, 1.0, 5.0, 5.0 ) );
+      adj = GTK_ADJUSTMENT( gtk_adjustment_new( default_value, 0.0, 120.0, 1.0, 5.0, 0.0 ) );
       if( ( default_value <= 0.0 ) || ( default_value > 120.0 ) )
       {
 	 gtk_adjustment_set_value( adj, 30.0 );
