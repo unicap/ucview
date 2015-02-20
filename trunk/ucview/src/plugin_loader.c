@@ -240,7 +240,7 @@ static gchar *get_user_plugin_path( void )
    }
    else
    {
-      if( g_mkdir( path, 0755 ) )
+      if( g_mkdir_with_parents( path, 0755 ) )
       {
 	 g_warning( "Failed to create '%s'\n", path );
 	 g_free( path );
