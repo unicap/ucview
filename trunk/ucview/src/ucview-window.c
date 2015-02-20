@@ -713,6 +713,10 @@ gboolean ucview_window_save_still_image( UCViewWindow *window, const gchar *_fil
    
    if( !filename ){
       path = gconf_client_get_string( window->client, UCVIEW_GCONF_DIR "/still_image_file_path", NULL );
+      if (!path || !strlen(path)){
+	 // default to user home directory, if path is not set.
+	 path = g_strdup( g_get_home_dir ());
+      }
       if( !g_file_test( path, ( G_FILE_TEST_IS_DIR ) ) ){
 	 g_set_error( error, UCVIEW_ERROR, 0, _("Path '%s' does not exist"), path );
 	 g_free( path );
