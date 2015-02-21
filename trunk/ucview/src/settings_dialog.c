@@ -316,7 +316,8 @@ static void audio_device_changed_cb( GtkComboBox *combo_box, GConfClient *client
 {
    gchar *text;
    text = gtk_combo_box_get_active_text( combo_box );
-   gconf_client_set_string( client, UCVIEW_GCONF_DIR "/alsa_card", text, NULL );
+   if (text)
+	   gconf_client_set_string( client, UCVIEW_GCONF_DIR "/alsa_card", text, NULL );
 }
 
 static void audio_bitrate_changed_cb( GtkComboBox *combo_box, GConfClient *client )
