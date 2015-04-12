@@ -1,6 +1,6 @@
 plugindir = $(libdir)/ucview/plugins
-INCLUDES = -I../../src -I$(top_srcdir) -I$(HOME)/opt/include
 
+AM_CPPFLAGS = -I../../src -I$(top_srcdir) -I$(HOME)/opt/include
 
 plugin_LTLIBRARIES = libdebayer_plugin.la
 

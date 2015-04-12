@@ -25,10 +25,10 @@ static char* plugin_ui ="<?xml version='1.0'?>"\
 "    </columns>"\
 "    <data>"\
 "      <row>"\
-"        <col id='0'>Nearest</col>"\
+"        <col id='0' translatable='yes'>Nearest</col>"\
 "      </row>"\
 "      <row>"\
-"        <col id='0'>Edge Sensing</col>"\
+"        <col id='0' translatable='yes'>Edge Sensing</col>"\
 "      </row>"\
 "    </data>"\
 "  </object>"\

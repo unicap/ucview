@@ -1,7 +1,6 @@
 plugindir = $(libdir)/ucview/plugins
 
-
-INCLUDES = -I../../src -I$(top_srcdir) 
+AM_CPPFLAGS = -I../../src -I$(top_srcdir) 
 
 plugin_LTLIBRARIES = libhistogram.la
 
